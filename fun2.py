@@ -1,22 +1,24 @@
-Python 3.5.2 (default, Nov 17 2016, 17:05:23) 
-[GCC 5.4.0 20160609] on linux
-Type "copyright", "credits" or "license()" for more information.
->>> 
-======== RESTART: /home/student/noamgl19_lab5/meet2017y1lab5/fun2.py ========
->>> 
-======== RESTART: /home/student/noamgl19_lab5/meet2017y1lab5/fun2.py ========
->>> draw_1d(c1, 12)
-~~~~~~~~~~~~
->>> draw_1d(c2, 12)
-!!!!!!!!!!!!
->>> 
-======== RESTART: /home/student/noamgl19_lab5/meet2017y1lab5/fun2.py ========
->>> draw_1d(c1, 4)
-~~~~
->>> 
-======== RESTART: /home/student/noamgl19_lab5/meet2017y1lab5/fun2.py ========
->>> draw_1d(c1, 4)
-~~~~
->>> draw_1d("x", 30)
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
->>> 
+
+def draw_1d(number, a):
+    for i in range(5):
+        print(number * stars)
+def draw_2d(number, stars, range1):
+    for i in range(range1):
+        print(number * stars)
+def draw_3d(number, lines, char1, char2):
+    for i in range(lines):
+        for i in range(lines[0], lines[int(line)]):
+            print(char1 * number)
+        for i in range(lines[1], lines[int(lines) - 1]):
+            print(char2 * number)
+
+def special_draw_2d(number, lines, c1, c2):
+   first_line = c1 * lines
+   fill_line = c1 +((lines-2) * c2) + c1
+   for num in range(number):
+        if num == 0 or num == number-1:
+           print(first_line)
+        else:
+            print(fill_line)
+       
+        
